@@ -1,20 +1,10 @@
 {
-  "manifest_version": 3,
-  "name": "Email Writer Extension",
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
   "version": "1.0",
-  "description": "Injects an AI reply button into Gmail compose window.",
-  "permissions": [
-    "scripting",
-    "activeTab"
-  ],
-  "host_permissions": [
-    "http://localhost:8080/*"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["*://mail.google.com/*"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
-    }
-  ]
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  }
 }
